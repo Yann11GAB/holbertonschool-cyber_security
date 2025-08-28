@@ -1,2 +1,2 @@
 #!/bin/bash
-last -n 5 | grep -v '^wtmp'
+last -F | head -n 5
