@@ -1,2 +1,2 @@
 #!/bin/bash
-iptables -t security -L -v -n
+sudo iptables -t security -L -v
