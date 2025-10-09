@@ -1,2 +1,2 @@
 #!/bin/bash
-subfinder -d $1 -silent | while read host; do ip=$(dig +short "$host" | head -n1); echo "$host,$ip"; done | tee "$1".txt
+whois "$1" | awk -F': ' '/^(Registrant|Admin|Tech)/ {gsub(": ", ","); gsub(", ", ","); print $1 "," $2 | "sed s/,$//"}' > "$1.csv"
