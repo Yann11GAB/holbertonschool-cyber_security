@@ -1,0 +1,2 @@
+(tcp.flags.syn==1 && tcp.window_size==8192) || (tcp.flags.ack==1 && tcp.window_size==17520)
+
