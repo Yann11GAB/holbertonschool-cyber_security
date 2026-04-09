@@ -1,3 +1,2 @@
 #!/bin/bash
-
-grep -o 'sshd' $1 | sort | uniq -c | sort -nr
+tr -cs '[:alnum:]_().:-' '\n' < ./*.log 2>/dev/null | sort | uniq -c | sort -nr
