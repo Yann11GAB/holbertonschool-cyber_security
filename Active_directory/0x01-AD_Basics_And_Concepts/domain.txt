@@ -1,0 +1,17 @@
+# extended LDIF
+#
+# LDAPv3
+# base <DC=PENTESTLAB,DC=local> with scope baseObject
+# filter: (objectclass=*)
+# requesting: * + 
+#
+
+# PENTESTLAB.local
+dn: DC=PENTESTLAB,DC=local
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1
