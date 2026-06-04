@@ -1,0 +1,2623 @@
+# extended LDIF
+#
+# LDAPv3
+# base <DC=PENTESTLAB,DC=local> with scope subtree
+# filter: (&(objectClass=user)(objectCategory=person))
+# requesting: * + 
+#
+
+# Administrator, Users, PENTESTLAB.local
+dn: CN=Administrator,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Administrator
+description: Built-in account for administering the computer/domain
+distinguishedName: CN=Administrator,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129193730.0Z
+whenChanged: 20260601174130.0Z
+uSNCreated: 8196
+memberOf: CN=Group Policy Creator Owners,CN=Users,DC=PENTESTLAB,DC=local
+memberOf: CN=Domain Admins,CN=Users,DC=PENTESTLAB,DC=local
+memberOf: CN=Enterprise Admins,CN=Users,DC=PENTESTLAB,DC=local
+memberOf: CN=Schema Admins,CN=Users,DC=PENTESTLAB,DC=local
+memberOf: CN=Administrators,CN=Builtin,DC=PENTESTLAB,DC=local
+uSNChanged: 368746
+name: Administrator
+objectGUID:: Vrj1UfmoQkeNo6p9vmeCQQ==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 134248098155968752
+lastLogoff: 0
+lastLogon: 134248099314417096
+pwdLastSet: 134141871893135918
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrG9AEAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 200
+sAMAccountName: Administrator
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260129195323.0Z
+dSCorePropagationData: 20260129195323.0Z
+dSCorePropagationData: 20260129193814.0Z
+dSCorePropagationData: 16010714042016.0Z
+lastLogonTimestamp: 134248092904264051
+
+# Guest, Users, PENTESTLAB.local
+dn: CN=Guest,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Guest
+description: Built-in account for guest access to the computer/domain
+distinguishedName: CN=Guest,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129193730.0Z
+whenChanged: 20260129193730.0Z
+uSNCreated: 8197
+memberOf: CN=Guests,CN=Builtin,DC=PENTESTLAB,DC=local
+uSNChanged: 8197
+name: Guest
+objectGUID:: OLBHomHbLkSrkj7Fe+ZKjg==
+userAccountControl: 66082
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403237701873
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 514
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrG9QEAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Guest
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260129193814.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# krbtgt, Users, PENTESTLAB.local
+dn: CN=krbtgt,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: krbtgt
+description: Key Distribution Center Service Account
+distinguishedName: CN=krbtgt,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129193813.0Z
+whenChanged: 20260129195323.0Z
+uSNCreated: 12324
+memberOf: CN=Denied RODC Password Replication Group,CN=Users,DC=PENTESTLAB,DC=
+ local
+uSNChanged: 12780
+showInAdvancedViewOnly: TRUE
+name: krbtgt
+objectGUID:: h0tnqDkgX0+V3ysMdmWQ9g==
+userAccountControl: 514
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403237549808
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134141890938957033
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrG9gEAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: krbtgt
+sAMAccountType: 805306368
+servicePrincipalName: kadmin/changepw
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260129195323.0Z
+dSCorePropagationData: 20260129193814.0Z
+dSCorePropagationData: 16010101181216.0Z
+msDS-SupportedEncryptionTypes: 0
+
+# John Admin, IT, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=John Admin,OU=IT,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: John Admin
+title: IT Administrator
+description: IT Administrator - Domain Admin
+distinguishedName: CN=John Admin,OU=IT,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=loc
+ al
+instanceType: 4
+whenCreated: 20260129202547.0Z
+whenChanged: 20260209153652.0Z
+uSNCreated: 12829
+memberOf: CN=IT-Admins,OU=IT-Groups,OU=IT,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=
+ local
+memberOf: CN=Domain Admins,CN=Users,DC=PENTESTLAB,DC=local
+uSNChanged: 167987
+department: IT
+name: John Admin
+objectGUID:: rYPyxgct80Gk7XQHoutsHQ==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403237389495
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250122982204
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGTwQAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: jadmin
+sAMAccountType: 805306368
+userPrincipalName: jadmin@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260131205509.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Sarah Support, IT-Users, IT, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Sarah Support,OU=IT-Users,OU=IT,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=loc
+ al
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Sarah Support
+title: Support Technician
+description: IT Support Technicien
+distinguishedName: CN=Sarah Support,OU=IT-Users,OU=IT,OU=PENTESTLAB-CORP,DC=PE
+ NTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129203240.0Z
+whenChanged: 20260216120442.0Z
+uSNCreated: 12835
+memberOf: CN=IT-Support,OU=IT-Groups,OU=IT,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC
+ =local
+memberOf: CN=Domain Admins,CN=Users,DC=PENTESTLAB,DC=local
+uSNChanged: 188477
+department: IT
+name: Sarah Support
+objectGUID:: W3Qsl3xYVkytkqS7cKcx/w==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403237389495
+lastLogoff: 0
+lastLogon: 134151266306921967
+pwdLastSet: 134151250122674630
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGUAQAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: ssupport
+sAMAccountType: 805306368
+userPrincipalName: ssupport@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260216120442.0Z
+dSCorePropagationData: 20260129205038.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134151252476312137
+
+# Mike Manager, IT-Users, IT, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Mike Manager,OU=IT-Users,OU=IT,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=loca
+ l
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Mike Manager
+title: IT Manager
+description: IT Manager
+distinguishedName: CN=Mike Manager,OU=IT-Users,OU=IT,OU=PENTESTLAB-CORP,DC=PEN
+ TESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129203714.0Z
+whenChanged: 20260216120442.0Z
+uSNCreated: 12841
+memberOf: CN=IT-Admins,OU=IT-Groups,OU=IT,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=
+ local
+uSNChanged: 188476
+department: IT
+name: Mike Manager
+objectGUID:: RGHXB6Rmqk2USsBgyarLIg==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403237389495
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250123298246
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGUQQAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: mmanager
+sAMAccountType: 805306368
+userPrincipalName: mmanager@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260216120442.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# SQL Service Account, IT-ServiceAccounts, IT, PENTESTLAB-CORP, PENTESTLAB.loca
+ l
+dn: CN=SQL Service Account,OU=IT-ServiceAccounts,OU=IT,OU=PENTESTLAB-CORP,DC=P
+ ENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SQL Service Account
+description: SQL Server Service Account
+distinguishedName: CN=SQL Service Account,OU=IT-ServiceAccounts,OU=IT,OU=PENTE
+ STLAB-CORP,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129212020.0Z
+whenChanged: 20260529185407.0Z
+uSNCreated: 16407
+memberOf: CN=Service-Accounts-Group,OU=IT-Groups,OU=IT,OU=PENTESTLAB-CORP,DC=P
+ ENTESTLAB,DC=local
+uSNChanged: 356463
+name: SQL Service Account
+objectGUID:: AMlIgC6JD0+YHa6SQHsHew==
+userAccountControl: 16843264
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403237238601
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134212347016456499
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGUgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc_sql
+sAMAccountType: 805306368
+userPrincipalName: svc_sql@PENTESTLAB.local
+servicePrincipalName: MSSQLSvc/DC01.PENTESTLAB.local:1433
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 134245544477753005
+msDS-AllowedToDelegateTo: CIFS/DC01
+msDS-AllowedToDelegateTo: CIFS/DC01.PENTESTLAB.local
+
+# Legacy User, IT-ServiceAccounts, IT, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Legacy User,OU=IT-ServiceAccounts,OU=IT,OU=PENTESTLAB-CORP,DC=PENTESTLA
+ B,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Legacy User
+description: Legacy account - no kerberos preauth
+distinguishedName: CN=Legacy User,OU=IT-ServiceAccounts,OU=IT,OU=PENTESTLAB-CO
+ RP,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129213702.0Z
+whenChanged: 20260529172228.0Z
+uSNCreated: 16415
+memberOf: CN=Service-Accounts-Group,OU=IT-Groups,OU=IT,OU=PENTESTLAB-CORP,DC=P
+ ENTESTLAB,DC=local
+uSNChanged: 348283
+name: Legacy User
+objectGUID:: qY3f0cFKzEqQDRPQ8u/EBA==
+userAccountControl: 4260352
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 134231492111518821
+lastLogoff: 0
+lastLogon: 134245489481929066
+pwdLastSet: 134211553221406412
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGUwQAAA==
+comment: FLAG_M2_T0{fe952761a0d5d62e32caa49d4a72e57e8765def3e720d3f5600fd7285d
+ 4a}
+accountExpires: 9223372036854775807
+logonCount: 12
+sAMAccountName: legacy
+sAMAccountType: 805306368
+userPrincipalName: legacy@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 134245489481929066
+
+# Alice Harris, HR-Users, HR, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Alice Harris,OU=HR-Users,OU=HR,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=loca
+ l
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Alice Harris
+description: HR Specialist
+distinguishedName: CN=Alice Harris,OU=HR-Users,OU=HR,OU=PENTESTLAB-CORP,DC=PEN
+ TESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129215354.0Z
+whenChanged: 20260209153652.0Z
+uSNCreated: 20502
+memberOf: CN=HR-Team,OU=HR-Groups,OU=HR,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=lo
+ cal
+uSNChanged: 167991
+department: HR
+name: Alice Harris
+objectGUID:: xmg0tOgfykWlZM9O3gt/ng==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403237079309
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250123471531
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGVAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: aharris
+sAMAccountType: 805306368
+userPrincipalName: aharris@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Bob Recruiter, HR-Users, HR, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Bob Recruiter,OU=HR-Users,OU=HR,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=loc
+ al
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Bob Recruiter
+description: Senior Recruiter
+distinguishedName: CN=Bob Recruiter,OU=HR-Users,OU=HR,OU=PENTESTLAB-CORP,DC=PE
+ NTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129215521.0Z
+whenChanged: 20260209153652.0Z
+uSNCreated: 20509
+memberOf: CN=HR-Team,OU=HR-Groups,OU=HR,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=lo
+ cal
+uSNChanged: 167993
+department: HR
+name: Bob Recruiter
+objectGUID:: mwSTkeKHc0ecwmYEhav1HQ==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403237079309
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250123763725
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGVQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: brecruiter
+sAMAccountType: 805306368
+userPrincipalName: brecruiter@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Carol Finance, FinanceUsers, Finance, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Carol Finance,OU=FinanceUsers,OU=Finance,OU=PENTESTLAB-CORP,DC=PENTESTL
+ AB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Carol Finance
+description: Financial Analyst
+distinguishedName: CN=Carol Finance,OU=FinanceUsers,OU=Finance,OU=PENTESTLAB-C
+ ORP,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129220554.0Z
+whenChanged: 20260209153652.0Z
+uSNCreated: 20523
+memberOf: CN=Finance-Team,OU=Finance-Groups,OU=Finance,OU=PENTESTLAB-CORP,DC=P
+ ENTESTLAB,DC=local
+uSNChanged: 167995
+department: Finance
+name: Carol Finance
+objectGUID:: yYc+XQSNvUKbWU2UwXMYGA==
+userAccountControl: 66050
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403236928691
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250124089893
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGVgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: cfinance
+sAMAccountType: 805306368
+userPrincipalName: cfinance@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# David Accountant, FinanceUsers, Finance, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=David Accountant,OU=FinanceUsers,OU=Finance,OU=PENTESTLAB-CORP,DC=PENTE
+ STLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: David Accountant
+description: Senior Accountant
+distinguishedName: CN=David Accountant,OU=FinanceUsers,OU=Finance,OU=PENTESTLA
+ B-CORP,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129222353.0Z
+whenChanged: 20260209153652.0Z
+uSNCreated: 20528
+memberOf: CN=Finance-Team,OU=Finance-Groups,OU=Finance,OU=PENTESTLAB-CORP,DC=P
+ ENTESTLAB,DC=local
+uSNChanged: 167997
+department: Finance
+name: David Accountant
+objectGUID:: hx7Z8O8YeU6UyTy/zC9O/w==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403236928691
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250124364937
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGVwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: daccountant
+sAMAccountType: 805306368
+userPrincipalName: daccountant@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Emma CFO, FinanceUsers, Finance, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Emma CFO,OU=FinanceUsers,OU=Finance,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC
+ =local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Emma CFO
+description: Chied Financial Officer
+distinguishedName: CN=Emma CFO,OU=FinanceUsers,OU=Finance,OU=PENTESTLAB-CORP,D
+ C=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129222516.0Z
+whenChanged: 20260216120442.0Z
+uSNCreated: 20535
+memberOf: CN=Finance-Executives,OU=Finance-Groups,OU=Finance,OU=PENTESTLAB-COR
+ P,DC=PENTESTLAB,DC=local
+memberOf: CN=Finance-Team,OU=Finance-Groups,OU=Finance,OU=PENTESTLAB-CORP,DC=P
+ ENTESTLAB,DC=local
+uSNChanged: 188480
+department: Finance
+name: Emma CFO
+objectGUID:: zzVQNRSolE6YHFvyhVZ3/Q==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403236766026
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250124546155
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGWAQAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: ecfo
+sAMAccountType: 805306368
+userPrincipalName: ecfo@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260216120442.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Frank Sales, Sales-Users, Sales, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Frank Sales,OU=Sales-Users,OU=Sales,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC
+ =local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Frank Sales
+title: Sales Rep
+description: Sales Representative
+distinguishedName: CN=Frank Sales,OU=Sales-Users,OU=Sales,OU=PENTESTLAB-CORP,D
+ C=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129235253.0Z
+whenChanged: 20260209153652.0Z
+uSNCreated: 24600
+memberOf: CN=Sales-Team,OU=Sales-Groups,OU=Sales,OU=PENTESTLAB-CORP,DC=PENTEST
+ LAB,DC=local
+uSNChanged: 168001
+department: Sales
+name: Frank Sales
+objectGUID:: Q4R139MVjkCV5qpjYYDRhg==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403236766026
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250124706412
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGWQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: fsales
+sAMAccountType: 805306368
+userPrincipalName: fsales@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Grace Manager, Sales-Users, Sales, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Grace Manager,OU=Sales-Users,OU=Sales,OU=PENTESTLAB-CORP,DC=PENTESTLAB,
+ DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Grace Manager
+title: Sales Manager
+description: Sales Manager
+distinguishedName: CN=Grace Manager,OU=Sales-Users,OU=Sales,OU=PENTESTLAB-CORP
+ ,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129235253.0Z
+whenChanged: 20260129235253.0Z
+uSNCreated: 24606
+uSNChanged: 24607
+department: Sales
+name: Grace Manager
+objectGUID:: CxycVL508U2mZwxo9/2xww==
+userAccountControl: 514
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403236608307
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGWgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: gmanager
+sAMAccountType: 805306368
+userPrincipalName: gmanager@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Henry Rep, Sales-Users, Sales, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Henry Rep,OU=Sales-Users,OU=Sales,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=l
+ ocal
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Henry Rep
+title: Junior Sales Rep
+description: Junior Sales Representive
+distinguishedName: CN=Henry Rep,OU=Sales-Users,OU=Sales,OU=PENTESTLAB-CORP,DC=
+ PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260129235253.0Z
+whenChanged: 20260209153652.0Z
+uSNCreated: 24609
+memberOf: CN=Sales-Team,OU=Sales-Groups,OU=Sales,OU=PENTESTLAB-CORP,DC=PENTEST
+ LAB,DC=local
+uSNChanged: 168005
+department: Sales
+name: Henry Rep
+objectGUID:: rq1uHYaODE+XapyJj42jrw==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403236608307
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250125300956
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGWwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: hrep
+sAMAccountType: 805306368
+userPrincipalName: hrep@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Grace Sales, Sales-Users, Sales, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Grace Sales,OU=Sales-Users,OU=Sales,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC
+ =local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Grace Sales
+title: Sales team
+distinguishedName: CN=Grace Sales,OU=Sales-Users,OU=Sales,OU=PENTESTLAB-CORP,D
+ C=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260202205047.0Z
+whenChanged: 20260209153652.0Z
+uSNCreated: 49182
+memberOf: CN=Sales-Team,OU=Sales-Groups,OU=Sales,OU=PENTESTLAB-CORP,DC=PENTEST
+ LAB,DC=local
+uSNChanged: 168003
+department: Sales
+name: Grace Sales
+objectGUID:: jQ+tQBXcYkaodgxovWz5dQ==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403236457367
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250125015739
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGZgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: gsales
+sAMAccountType: 805306368
+userPrincipalName: gsales@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Backup Service, IT-ServiceAccounts, IT, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Backup Service,OU=IT-ServiceAccounts,OU=IT,OU=PENTESTLAB-CORP,DC=PENTES
+ TLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Backup Service
+description: Backup Service Account - Has DCSync rights
+distinguishedName: CN=Backup Service,OU=IT-ServiceAccounts,OU=IT,OU=PENTESTLAB
+ -CORP,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260204141644.0Z
+whenChanged: 20260529183835.0Z
+uSNCreated: 131124
+memberOf: CN=BH-Lab-Users,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=Domain Admins,CN=Users,DC=PENTESTLAB,DC=local
+uSNChanged: 356454
+name: Backup Service
+objectGUID:: X/I+twrrqUO2UfUdxHzdJQ==
+userAccountControl: 4260352
+badPwdCount: 3
+codePage: 0
+countryCode: 0
+homeDirectory: BHFLAG2{K3RB3R04ST_SVC_B4CKUP_F2}
+badPasswordTime: 134245540159322876
+lastLogoff: 0
+lastLogon: 134225545719315024
+pwdLastSet: 134213210268732660
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGaAQAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 12
+sAMAccountName: svc_backup
+sAMAccountType: 805306368
+userPrincipalName: svc_backup@PENTESTLAB.local
+servicePrincipalName: VeeamBackup/backup:9392
+servicePrincipalName: VeeamBackup/backup.pentestlab.local:9392
+servicePrincipalName: BackupSvc/DC01.PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260204151138.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134245535151578569
+
+# Admin Temp, IT-Users, IT, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Admin Temp,OU=IT-Users,OU=IT,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Admin Temp
+description: Temporary Admin Account
+distinguishedName: CN=Admin Temp,OU=IT-Users,OU=IT,OU=PENTESTLAB-CORP,DC=PENTE
+ STLAB,DC=local
+instanceType: 4
+whenCreated: 20260204141644.0Z
+whenChanged: 20260506152251.0Z
+uSNCreated: 131130
+memberOf: CN=Domain Admins,CN=Users,DC=PENTESTLAB,DC=local
+uSNChanged: 332271
+name: Admin Temp
+objectGUID:: wzydgkt1HU+eIdU3oKZdfA==
+userAccountControl: 4260352
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403236301176
+lastLogoff: 0
+lastLogon: 134225545719315024
+pwdLastSet: 134151250126743789
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGaQQAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 11
+sAMAccountName: tempadmin
+sAMAccountType: 805306368
+userPrincipalName: tempadmin@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260204151138.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134225545719315024
+
+# Application Service, IT-ServiceAccounts, IT, PENTESTLAB-CORP, PENTESTLAB.loca
+ l
+dn: CN=Application Service,OU=IT-ServiceAccounts,OU=IT,OU=PENTESTLAB-CORP,DC=P
+ ENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Application Service
+description: Application Service - Password: AppServ1ce!
+distinguishedName: CN=Application Service,OU=IT-ServiceAccounts,OU=IT,OU=PENTE
+ STLAB-CORP,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260204141644.0Z
+whenChanged: 20260529180417.0Z
+uSNCreated: 131136
+uSNChanged: 356449
+name: Application Service
+objectGUID:: je/oaR+gr0GLUPpocu7buA==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 134245330084650260
+lastLogoff: 0
+lastLogon: 134245522347419291
+pwdLastSet: 134151250127046246
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGagQAAA==
+accountExpires: 9223372036854775807
+logonCount: 2
+sAMAccountName: svc_app
+sAMAccountType: 805306368
+userPrincipalName: svc_app@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 134245514576749491
+
+# IIS Service, IT-ServiceAccounts, IT, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=IIS Service,OU=IT-ServiceAccounts,OU=IT,OU=PENTESTLAB-CORP,DC=PENTESTLA
+ B,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: IIS Service
+description: IIS Web Service Account
+distinguishedName: CN=IIS Service,OU=IT-ServiceAccounts,OU=IT,OU=PENTESTLAB-CO
+ RP,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260204141644.0Z
+whenChanged: 20260218105741.0Z
+uSNCreated: 131142
+uSNChanged: 196693
+name: IIS Service
+objectGUID:: pjczcRm9pEGtT9mQuYCKYA==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403236301176
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134151250127364499
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGawQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc_iis
+sAMAccountType: 805306368
+userPrincipalName: svc_iis@PENTESTLAB.local
+servicePrincipalName: HTTP/Client01.PENTESTLAB.local:80
+servicePrincipalName: HTTP/Client01.PENTESTLAB.local:1433
+servicePrincipalName: HTTP/web.pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Old Admin, Disabled-Objects, PENTESTLAB-CORP, PENTESTLAB.local
+dn: CN=Old Admin,OU=Disabled-Objects,OU=PENTESTLAB-CORP,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Old Admin
+description: Old administrator account - Password never changed
+distinguishedName: CN=Old Admin,OU=Disabled-Objects,OU=PENTESTLAB-CORP,DC=PENT
+ ESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260204153051.0Z
+whenChanged: 20260204153051.0Z
+uSNCreated: 135225
+uSNChanged: 135228
+name: Old Admin
+objectGUID:: 7epz7GEBz0q41f3P0TqqTQ==
+userAccountControl: 66050
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403236138123
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134146926514985991
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGbAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: oldadmin
+sAMAccountType: 805306368
+userPrincipalName: oldadmin@PENTESTLAB.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Alice Martin, Lab_Users, PENTESTLAB.local
+dn: CN=Alice Martin,OU=Lab_Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Alice Martin
+title: Developer
+description: Regular User - Lab Student
+distinguishedName: CN=Alice Martin,OU=Lab_Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260414094348.0Z
+whenChanged: 20260414094810.0Z
+uSNCreated: 266332
+memberOf: CN=VPN_Users,DC=PENTESTLAB,DC=local
+memberOf: CN=Domain Admins,CN=Users,DC=PENTESTLAB,DC=local
+uSNChanged: 266466
+name: Alice Martin
+objectGUID:: VI+5O9Jrj0u8Dl9E/TbjwQ==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235983777
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134206334281596886
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGbQQAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: alice.martin
+sAMAccountType: 805306368
+userPrincipalName: alice.martin@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260414094810.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Bob Dupont, Lab_Users, PENTESTLAB.local
+dn: CN=Bob Dupont,OU=Lab_Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Bob Dupont
+title: SysAdmin
+description: Regular User - Lab Student
+distinguishedName: CN=Bob Dupont,OU=Lab_Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260414094348.0Z
+whenChanged: 20260414094810.0Z
+uSNCreated: 266338
+memberOf: CN=IT_Admins,DC=PENTESTLAB,DC=local
+memberOf: CN=VPN_Users,DC=PENTESTLAB,DC=local
+uSNChanged: 266464
+name: Bob Dupont
+objectGUID:: FbWlb1sChE2YvsWns130Ag==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235983777
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134206334282205136
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGbgQAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: bob.dupont
+sAMAccountType: 805306368
+userPrincipalName: bob.dupont@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260414094810.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Carol White, Lab_Users, PENTESTLAB.local
+dn: CN=Carol White,OU=Lab_Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Carol White
+title: HR Manager
+description: FLAG4{ab312724162e30809801f7c0490f547317ba8cf3fbc243819264ddf0e52
+ b}
+distinguishedName: CN=Carol White,OU=Lab_Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260414094348.0Z
+whenChanged: 20260416101427.0Z
+uSNCreated: 266344
+memberOf: CN=HR_Staff,DC=PENTESTLAB,DC=local
+memberOf: CN=VPN_Users,DC=PENTESTLAB,DC=local
+uSNChanged: 278764
+name: Carol White
+objectGUID:: mOsrosrVEkOW8MN/hE8MZA==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235830805
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134206334282675787
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGbwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: carol.white
+sAMAccountType: 805306368
+userPrincipalName: carol.white@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# David Brown, Lab_Users, PENTESTLAB.local
+dn: CN=David Brown,OU=Lab_Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: David Brown
+title: IT Analyst
+description: IT Staff
+distinguishedName: CN=David Brown,OU=Lab_Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260414094348.0Z
+whenChanged: 20260414094810.0Z
+uSNCreated: 266350
+memberOf: CN=IT_Admins,DC=PENTESTLAB,DC=local
+memberOf: CN=File_Admins,DC=PENTESTLAB,DC=local
+uSNChanged: 266465
+name: David Brown
+objectGUID:: HcjQ0iDsIEyBpZ6UEPaKNw==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235830805
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134206334283142782
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGcAQAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: david.brown
+sAMAccountType: 805306368
+userPrincipalName: david.brown@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260414094810.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# SvcBackup, ServiceAccts, PENTESTLAB.local
+dn: CN=SvcBackup,OU=ServiceAccts,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SvcBackup
+title: Service
+description: FLAG1{747fb213581c9cd487fc6e77bf4e54aa6321839fe023b0551ceef706cbc
+ 6}
+distinguishedName: CN=SvcBackup,OU=ServiceAccts,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260414094348.0Z
+whenChanged: 20260416101427.0Z
+uSNCreated: 266356
+memberOf: CN=Backup_Ops,DC=PENTESTLAB,DC=local
+uSNChanged: 278762
+name: SvcBackup
+objectGUID:: sv2FhFr/ikG4qyuA0KDuhg==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235677607
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134206334283624989
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGcQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc.backup
+sAMAccountType: 805306368
+userPrincipalName: svc.backup@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# SvcWeb, ServiceAccts, PENTESTLAB.local
+dn: CN=SvcWeb,OU=ServiceAccts,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SvcWeb
+title: Service
+distinguishedName: CN=SvcWeb,OU=ServiceAccts,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260414094348.0Z
+whenChanged: 20260416090345.0Z
+uSNCreated: 266362
+uSNChanged: 278710
+name: SvcWeb
+objectGUID:: rJBkY4dROUSZW8+ai9apyA==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235677607
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134206334284083347
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGcgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc.web
+sAMAccountType: 805306368
+userPrincipalName: svc.web@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# OldAdmin, Lab_Users, PENTESTLAB.local
+dn: CN=OldAdmin,OU=Lab_Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: OldAdmin
+title: Former Admin
+distinguishedName: CN=OldAdmin,OU=Lab_Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260414094348.0Z
+whenChanged: 20260416080320.0Z
+uSNCreated: 266368
+uSNChanged: 278664
+name: OldAdmin
+objectGUID:: fn8jHSiq1E+ru0njwcsMJw==
+userAccountControl: 514
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235512466
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134206334284558066
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGcwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: old.admin
+sAMAccountType: 805306368
+userPrincipalName: old.admin@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# TempUser, Lab_Users, PENTESTLAB.local
+dn: CN=TempUser,OU=Lab_Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: TempUser
+title: Temp
+description: DISABLED - Temporary account
+distinguishedName: CN=TempUser,OU=Lab_Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260414094348.0Z
+whenChanged: 20260414094348.0Z
+uSNCreated: 266373
+uSNChanged: 266376
+name: TempUser
+objectGUID:: j7mf5q4WEkKSh9aUN8BD2A==
+userAccountControl: 514
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235512466
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134206334285025496
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGdAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: temp.user
+sAMAccountType: 805306368
+userPrincipalName: temp.user@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# student, Users, PENTESTLAB.local
+dn: CN=student,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: student
+distinguishedName: CN=student,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260416134614.0Z
+whenChanged: 20260513122155.0Z
+uSNCreated: 278797
+uSNChanged: 335984
+name: student
+objectGUID:: QT4YPN7lAEeD0F+V2yanfw==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235360939
+lastLogoff: 0
+lastLogon: 134217510240235961
+pwdLastSet: 134208208900056406
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGewQAAA==
+accountExpires: 9223372036854775807
+logonCount: 10
+sAMAccountName: student
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 134231485153574147
+
+# Marcus Webb, Users, LDAP-Project, PENTESTLAB.local
+dn: CN=Marcus Webb,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Marcus Webb
+distinguishedName: CN=Marcus Webb,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=lo
+ cal
+instanceType: 4
+whenCreated: 20260423115205.0Z
+whenChanged: 20260506144150.0Z
+uSNCreated: 290933
+memberOf: CN=Lab-ReadOnly,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=Machine-Abuse,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=LDAP-Lab-Users,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 332235
+name: Marcus Webb
+objectGUID:: MTrsz1ZgXUKOU3hP+t8DjA==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235360939
+lastLogoff: 0
+lastLogon: 134217518771694441
+pwdLastSet: 134214187252751913
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGfQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 1
+sAMAccountName: mwebb
+sAMAccountType: 805306368
+userPrincipalName: mwebb@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 134225521100518002
+
+# Diana Reeves, Users, LDAP-Project, PENTESTLAB.local
+dn: CN=Diana Reeves,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Diana Reeves
+description: Temp password: Reeves@Temp2024
+distinguishedName: CN=Diana Reeves,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=l
+ ocal
+instanceType: 4
+whenCreated: 20260423115205.0Z
+whenChanged: 20260506145827.0Z
+uSNCreated: 290939
+info: FLAG0{921d2a56bd128240587aa7abbcad0a37fb8e5c6e091fa763754f27648fbe}
+memberOf: CN=LDAP-Lab-Users,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 332264
+name: Diana Reeves
+objectGUID:: 1vyiJlqLRUm/5qnASW5/Ig==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134248037486859999
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134214187253532019
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGfgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: dreeves
+sAMAccountType: 805306368
+userPrincipalName: dreeves@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Ryan Foster, Users, LDAP-Project, PENTESTLAB.local
+dn: CN=Ryan Foster,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Ryan Foster
+distinguishedName: CN=Ryan Foster,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=lo
+ cal
+instanceType: 4
+whenCreated: 20260423115205.0Z
+whenChanged: 20260427094812.0Z
+uSNCreated: 290945
+info: svc credential: User@2024!
+memberOf: CN=LDAP-Lab-Users,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 319742
+employeeNumber: FLAG4{4S_R3P_R04ST1NG_M4ST3R_F5}
+name: Ryan Foster
+objectGUID:: iofflomEMkiUhn20XFV2+w==
+userAccountControl: 4260352
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134248038326882404
+lastLogoff: 0
+lastLogon: 134225545719315024
+pwdLastSet: 134214187253845472
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGfwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 6
+sAMAccountName: rfoster
+sAMAccountType: 805306368
+userPrincipalName: rfoster@pentestlab.local
+servicePrincipalName: MSSQLSvc/app-dev.pentestlab.local:1433
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 134217568928805481
+
+# SQL Service, Service-Accounts, LDAP-Project, PENTESTLAB.local
+dn: CN=SQL Service,OU=Service-Accounts,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SQL Service
+distinguishedName: CN=SQL Service,OU=Service-Accounts,OU=LDAP-Project,DC=PENTE
+ STLAB,DC=local
+instanceType: 4
+whenCreated: 20260423115205.0Z
+whenChanged: 20260423115313.0Z
+uSNCreated: 290952
+memberOf: CN=LDAP-Lab-Users,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 291052
+name: SQL Service
+objectGUID:: x0EbUB7Z9kWyx3AlZsufTQ==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134248022644143026
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134214187254469249
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGgAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc_mssql
+sAMAccountType: 805306368
+userPrincipalName: svc_mssql@pentestlab.local
+servicePrincipalName: MSSQLSvc/sql:1433
+servicePrincipalName: MSSQLSvc/sql.pentestlab.local:1433
+servicePrincipalName: MSSQLSvc/sql.
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Nathan Cross, Users, LDAP-Project, PENTESTLAB.local
+dn: CN=Nathan Cross,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Nathan Cross
+sn: Cross
+title: Network Engineer
+description:: TmV0d29yayBpbmZyYXN0cnVjdHVyZSDigJQgaW50ZXJuYWwgb3BzIHRlYW0=
+physicalDeliveryOfficeName: HQ-Floor1
+givenName: Nathan
+distinguishedName: CN=Nathan Cross,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=l
+ ocal
+instanceType: 4
+whenCreated: 20260423115312.0Z
+whenChanged: 20260506145712.0Z
+uSNCreated: 290986
+memberOf: CN=Machine-Abuse,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=LDAP-Lab-Users,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 332261
+department: Information Technology
+company: PentestLab Corp
+name: Nathan Cross
+objectGUID:: l6J7CuRfF0+6YZzOCibC2Q==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403235048348
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134214187923289749
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGhQQAAA==
+comment: FLAG1{4f3c8b2e1a97d560ec342f8b1094a3d27c6e5f08b23aa914867d390c21e}
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: ncross
+sAMAccountType: 805306368
+userPrincipalName: ncross@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260423115312.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Olivia Stone, Users, LDAP-Project, PENTESTLAB.local
+dn: CN=Olivia Stone,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Olivia Stone
+sn: Stone
+title: Security Analyst
+description:: UEtJIGNlcnRpZmljYXRlIG1hbmFnZW1lbnQg4oCUIHNlY3VyaXR5IG9wZXJhdGlv
+ bnM=
+physicalDeliveryOfficeName: HQ-Floor3
+givenName: Olivia
+distinguishedName: CN=Olivia Stone,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=l
+ ocal
+instanceType: 4
+whenCreated: 20260423115312.0Z
+whenChanged: 20260506145712.0Z
+uSNCreated: 290992
+memberOf: CN=PKI-Enrollers,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=LDAP-Lab-Users,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 332262
+department: Information Security
+company: PentestLab Corp
+wWWHomePage: FLAG2{b7e4190dc3a825f671308ecd5b2f93a40d71c6e982fb047153e8a26490d
+ }
+name: Olivia Stone
+objectGUID:: QTM3jlflGESkjIVZyCmUhw==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403234891310
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134214187923918666
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGhgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: ostone
+sAMAccountType: 805306368
+userPrincipalName: ostone@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260423115312.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Victor Hayes, Users, LDAP-Project, PENTESTLAB.local
+dn: CN=Victor Hayes,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Victor Hayes
+sn: Hayes
+title: Senior Accountant
+description:: RElTQUJMRUQg4oCUIGZvcm1lciBlbXBsb3llZSwga2VwdCBmb3IgYXVkaXQgdHJh
+ aWw=
+physicalDeliveryOfficeName: HQ-Floor4
+givenName: Victor
+distinguishedName: CN=Victor Hayes,OU=Users,OU=LDAP-Project,DC=PENTESTLAB,DC=l
+ ocal
+instanceType: 4
+whenCreated: 20260423115312.0Z
+whenChanged: 20260506145712.0Z
+uSNCreated: 290998
+memberOf: CN=LDAP-Lab-Users,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 332263
+department: Finance
+company: PentestLab Corp
+name: Victor Hayes
+objectGUID:: 67OZF/rB6k2lHetG1yJong==
+userAccountControl: 66050
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403234737007
+lastLogoff: 0
+lastLogon: 0
+scriptPath: FLAG3{3e6d07c2f9b4a158d023e7c80469ba512f93d6e2c47b081a953f10827e5}
+pwdLastSet: 134214187924386575
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGhwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: vhayes
+sAMAccountType: 805306368
+userPrincipalName: vhayes@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# PKI Service, Service-Accounts, LDAP-Project, PENTESTLAB.local
+dn: CN=PKI Service,OU=Service-Accounts,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: PKI Service
+sn: Service
+title: Service Account
+description: Active Directory Certificate Services account
+givenName: PKI
+distinguishedName: CN=PKI Service,OU=Service-Accounts,OU=LDAP-Project,DC=PENTE
+ STLAB,DC=local
+instanceType: 4
+whenCreated: 20260423115312.0Z
+whenChanged: 20260423115313.0Z
+uSNCreated: 291003
+memberOf: CN=PKI-Enrollers,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=LDAP-Lab-Users,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 291053
+department: Information Technology
+company: PentestLab Corp
+name: PKI Service
+objectGUID:: ItG/zpTUd0i9DnNMo8vpGQ==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 134248022644813315
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134214187925328215
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGiAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc_pki
+sAMAccountType: 805306368
+userPrincipalName: svc_pki@pentestlab.local
+servicePrincipalName: HTTP/pki.pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260423115312.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Relay Service, Service-Accounts, LDAP-Project, PENTESTLAB.local
+dn: CN=Relay Service,OU=Service-Accounts,OU=LDAP-Project,DC=PENTESTLAB,DC=loca
+ l
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Relay Service
+sn: Service
+title: Service Account
+description:: SW50ZXJuYWwgYXV0aGVudGljYXRpb24gcmVsYXkg4oCUIG5ldHdvcmsgc2Vydmlj
+ ZXM=
+givenName: Relay
+distinguishedName: CN=Relay Service,OU=Service-Accounts,OU=LDAP-Project,DC=PEN
+ TESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260423115312.0Z
+whenChanged: 20260423115313.0Z
+uSNCreated: 291009
+memberOf: CN=Relay-Targets,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=LDAP-Lab-Users,OU=Groups,OU=LDAP-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 291054
+department: Information Technology
+company: PentestLab Corp
+name: Relay Service
+objectGUID:: 6r4dkVOF+ECALnm0xH+JpQ==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 134248022644374093
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134214187925797585
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGiQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc_relay
+sAMAccountType: 805306368
+userPrincipalName: svc_relay@pentestlab.local
+servicePrincipalName: LDAP/relay.pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260423155106.0Z
+dSCorePropagationData: 20260423115312.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Internal Auditor, Users, PENTESTLAB.local
+dn: CN=Internal Auditor,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Internal Auditor
+distinguishedName: CN=Internal Auditor,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260424153531.0Z
+whenChanged: 20260424153531.0Z
+uSNCreated: 315508
+memberOf: CN=Finance-Audit,CN=Users,DC=PENTESTLAB,DC=local
+uSNChanged: 315512
+name: Internal Auditor
+objectGUID:: Mm1adzT/AkmwgqcEB402Jg==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403234584516
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134215185315555892
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGigQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: iauditor
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 16010101000000.0Z
+
+# Service Reporting, Users, PENTESTLAB.local
+dn: CN=Service Reporting,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Service Reporting
+distinguishedName: CN=Service Reporting,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260424153531.0Z
+whenChanged: 20260424154251.0Z
+uSNCreated: 315514
+memberOf: CN=App-Admins,CN=Users,DC=PENTESTLAB,DC=local
+uSNChanged: 315558
+name: Service Reporting
+objectGUID:: JcnJv7IzmEWJRrySOU6X9Q==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403234425444
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134215185316348086
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGiwQAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc_reporting
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260424154251.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Low Priv User, Users, PENTESTLAB.local
+dn: CN=Low Priv User,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Low Priv User
+distinguishedName: CN=Low Priv User,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260424153531.0Z
+whenChanged: 20260424153531.0Z
+uSNCreated: 315520
+uSNChanged: 315524
+name: Low Priv User
+objectGUID:: a79wTlJWWUSjJexRygy3gw==
+userAccountControl: 512
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403234425444
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134215185316809770
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGjAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: luser
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 16010101000000.0Z
+
+# Blake Harper, BH-Users, BH-Project, PENTESTLAB.local
+dn: CN=Blake Harper,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Blake Harper
+sn: Harper
+title: IT Trainee
+description:: TmV3IElUIHRyYWluZWUg4oCUIEJsb29kSG91bmQgY29sbGVjdGlvbiBlbnRyeSBw
+ b2ludA==
+physicalDeliveryOfficeName: BH-Floor1
+givenName: Blake
+distinguishedName: CN=Blake Harper,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC=
+ local
+instanceType: 4
+whenCreated: 20260427093158.0Z
+whenChanged: 20260513120535.0Z
+uSNCreated: 319639
+memberOf: CN=BH-Lab-Users,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 335980
+department: Information Technology
+company: PentestLab Corp
+name: Blake Harper
+objectGUID:: UA/j7h3KJU+5o6Z1BCqLMw==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 134225363305818433
+lastLogoff: 0
+lastLogon: 134231562071982245
+pwdLastSet: 134217559187251552
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGlgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 32
+sAMAccountName: bh_intern
+sAMAccountType: 805306368
+userPrincipalName: bh_intern@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260427093158.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134231475350845716
+pager: BHFLAG0{BL00DH0UND_C0LL3CT10N_ST4RT_F0}
+
+# Chloe Mercer, BH-Users, BH-Project, PENTESTLAB.local
+dn: CN=Chloe Mercer,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Chloe Mercer
+sn: Mercer
+title: Helpdesk Analyst
+description:: TGV2ZWwgMiBoZWxwZGVzayDigJQgdXNlciBtYW5hZ2VtZW50IGRlbGVnYXRpb24=
+physicalDeliveryOfficeName: BH-Floor1
+telephoneNumber: BHFLAG1{G3N3R1C4LL_4BUS3_P4TH_F1}
+givenName: Chloe
+distinguishedName: CN=Chloe Mercer,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC=
+ local
+instanceType: 4
+whenCreated: 20260427093158.0Z
+whenChanged: 20260429075442.0Z
+uSNCreated: 319645
+memberOf: CN=BH-Lab-Users,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 320016
+department: IT Support
+company: PentestLab Corp
+name: Chloe Mercer
+objectGUID:: rHsbEtorE0uAXK7PQmDjeA==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219402496461302
+lastLogoff: 0
+lastLogon: 134219403233951710
+pwdLastSet: 134217559188016774
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGlwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: bh_helpdesk
+sAMAccountType: 805306368
+userPrincipalName: bh_helpdesk@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260427093158.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134219228820593535
+
+# Ethan Novak, BH-Users, BH-Project, PENTESTLAB.local
+dn: CN=Ethan Novak,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Ethan Novak
+sn: Novak
+title: DevOps Engineer
+description:: Q0kvQ0QgcGlwZWxpbmUgbWFuYWdlbWVudCDigJQgc2VydmVyIHRpZXIgYWNjZXNz
+physicalDeliveryOfficeName: BH-Floor2
+givenName: Ethan
+distinguishedName: CN=Ethan Novak,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC=l
+ ocal
+instanceType: 4
+whenCreated: 20260427093158.0Z
+whenChanged: 20260429075441.0Z
+uSNCreated: 319651
+memberOf: CN=BH-Remote-Access,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=loca
+ l
+memberOf: CN=BH-Tier1-Servers,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=loca
+ l
+memberOf: CN=BH-Lab-Users,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 320015
+department: Software Development
+company: PentestLab Corp
+name: Ethan Novak
+objectGUID:: ktAid7es4USHL7ni0kObVg==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219402496764516
+lastLogoff: 0
+lastLogon: 134219403233641911
+pwdLastSet: 134217559188482214
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGmAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: bh_devops
+sAMAccountType: 805306368
+userPrincipalName: bh_devops@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260427093158.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134219228819232987
+
+# Jordan Martin, BH-Users, BH-Project, PENTESTLAB.local
+dn: CN=Jordan Martin,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Jordan Martin
+sn: Martin
+title: Release Manager
+description:: QXBwbGljYXRpb24gcmVsZWFzZSBjb29yZGluYXRpb24g4oCUIENJL0NEIG93bmVy
+physicalDeliveryOfficeName: BH-Floor2
+givenName: Jordan
+distinguishedName: CN=Jordan Martin,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC
+ =local
+instanceType: 4
+whenCreated: 20260427093158.0Z
+whenChanged: 20260429102608.0Z
+uSNCreated: 319657
+memberOf: CN=BH-Lab-Users,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 320217
+department: Software Development
+company: PentestLab Corp
+employeeType: BHFLAG3{4S_R3P_J0RD4N_M4RT1N_F3}
+name: Jordan Martin
+objectGUID:: uX/cYz3p00q1Cs5VcFMYPQ==
+userAccountControl: 4260352
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403233484759
+lastLogoff: 0
+lastLogon: 134225545719315024
+pwdLastSet: 134219319687968057
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGmQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 11
+sAMAccountName: jmartin
+sAMAccountType: 805306368
+userPrincipalName: jmartin@pentestlab.local
+servicePrincipalName: MSSQLSvc/dev-app.pentestlab.local:1433
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260427093158.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134217568928805481
+
+# Alex Thornton, BH-Users, BH-Project, PENTESTLAB.local
+dn: CN=Alex Thornton,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Alex Thornton
+sn: Thornton
+title: Senior Systems Administrator
+description:: U2VuaW9yIHN5c2FkbWluIOKAlCBBRCBpbmZyYXN0cnVjdHVyZSBtYW5hZ2VtZW50
+physicalDeliveryOfficeName: BH-Floor3
+givenName: Alex
+distinguishedName: CN=Alex Thornton,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC
+ =local
+instanceType: 4
+whenCreated: 20260427093158.0Z
+whenChanged: 20260429121845.0Z
+uSNCreated: 319663
+memberOf: CN=BH-Replication,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=BH-Remote-Access,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=loca
+ l
+memberOf: CN=BH-IT-Admins,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=BH-Lab-Users,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 320357
+department: Information Technology
+company: PentestLab Corp
+name: Alex Thornton
+objectGUID:: I7cbkJ1BpkqVAUZLJXc5tg==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219403233484759
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134219387258792813
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGmgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: bh_sysadmin
+sAMAccountType: 805306368
+userPrincipalName: bh_sysadmin@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260429090622.0Z
+dSCorePropagationData: 20260429084534.0Z
+dSCorePropagationData: 20260429081728.0Z
+dSCorePropagationData: 20260427122433.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134219386737392511
+homePhone: BHFLAG5{DCSYNC_DOM41N_C0MPR0M1S3_F5}
+
+# Morgan Liu, BH-Users, BH-Project, PENTESTLAB.local
+dn: CN=Morgan Liu,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Morgan Liu
+sn: Liu
+title: IT Auditor
+description:: RElTQUJMRUQg4oCUIGF1ZGl0IGFjY291bnQg4oCUIHJldGFpbmVkIGZvciBjb21w
+ bGlhbmNlIHJlY29yZHM=
+physicalDeliveryOfficeName: BH-Floor4
+givenName: Morgan
+distinguishedName: CN=Morgan Liu,OU=BH-Users,OU=BH-Project,DC=PENTESTLAB,DC=lo
+ cal
+instanceType: 4
+whenCreated: 20260427093159.0Z
+whenChanged: 20260427122434.0Z
+otherTelephone: BHFLAG4{D1S4BL3D_M0RG4N_L1U_F4}
+uSNCreated: 319669
+memberOf: CN=BH-Lab-Users,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 319807
+department: Compliance
+company: PentestLab Corp
+name: Morgan Liu
+objectGUID:: hZ56ofvbGkGNJGieyx5uBQ==
+userAccountControl: 66050
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 134219402497389571
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134217559190210645
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGmwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: bh_auditor
+sAMAccountType: 805306368
+userPrincipalName: bh_auditor@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 16010101000000.0Z
+
+# Monitor Service, BH-ServiceAccounts, BH-Project, PENTESTLAB.local
+dn: CN=Monitor Service,OU=BH-ServiceAccounts,OU=BH-Project,DC=PENTESTLAB,DC=lo
+ cal
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Monitor Service
+sn: Service
+title: Service Account
+description: Nagios / Zabbix monitoring agent service account
+givenName: Monitor
+distinguishedName: CN=Monitor Service,OU=BH-ServiceAccounts,OU=BH-Project,DC=P
+ ENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260427093159.0Z
+whenChanged: 20260427093159.0Z
+uSNCreated: 319674
+memberOf: CN=BH-Tier1-Servers,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=loca
+ l
+memberOf: CN=BH-Lab-Users,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 319724
+department: Information Technology
+company: PentestLab Corp
+name: Monitor Service
+objectGUID:: YYhNWT/WGEK0IglGZtM9Dg==
+userAccountControl: 66048
+badPwdCount: 4
+codePage: 0
+countryCode: 0
+badPasswordTime: 134245541769785869
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134217559190980354
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGnAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc_monitor
+sAMAccountType: 805306368
+userPrincipalName: svc_monitor@pentestlab.local
+servicePrincipalName: HTTP/monitor.pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260427093159.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# SQL Service 2, BH-ServiceAccounts, BH-Project, PENTESTLAB.local
+dn: CN=SQL Service 2,OU=BH-ServiceAccounts,OU=BH-Project,DC=PENTESTLAB,DC=loca
+ l
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: SQL Service 2
+sn: Service
+title: Service Account
+description:: U1FMIFNlcnZlciAyMDIyIHNlY29uZGFyeSBpbnN0YW5jZSDigJQgZG8gbm90IG1v
+ ZGlmeQ==
+physicalDeliveryOfficeName: BH-DataCenter
+givenName: SQL2
+distinguishedName: CN=SQL Service 2,OU=BH-ServiceAccounts,OU=BH-Project,DC=PEN
+ TESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260429100511.0Z
+whenChanged: 20260429100511.0Z
+uSNCreated: 320198
+memberOf: CN=BH-Lab-Users,OU=BH-Groups,OU=BH-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 320204
+department: Information Technology
+company: PentestLab Corp
+name: SQL Service 2
+objectGUID:: u7KsMiQ6kUCHWv+w596zMw==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+homeDirectory: BHFLAG2b{K3RB3R04ST_SVC_SQL2_DR4G0N_F2B}
+badPasswordTime: 134219403233178607
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134219307110309517
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGoQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc_sql2
+sAMAccountType: 805306368
+userPrincipalName: svc_sql2@pentestlab.local
+servicePrincipalName: MSSQLSvc/sql2:1433
+servicePrincipalName: MSSQLSvc/sql2.
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260429100511.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Sam Rivera, PV-Users, PV-Project, PENTESTLAB.local
+dn: CN=Sam Rivera,OU=PV-Users,OU=PV-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Sam Rivera
+sn: Rivera
+title: IT Intern
+description: IT intern -- domain joined workstation user
+physicalDeliveryOfficeName: PV-Floor1
+givenName: Sam
+distinguishedName: CN=Sam Rivera,OU=PV-Users,OU=PV-Project,DC=PENTESTLAB,DC=lo
+ cal
+instanceType: 4
+whenCreated: 20260430091922.0Z
+whenChanged: 20260506084034.0Z
+uSNCreated: 320568
+memberOf: CN=PV-HelpDesk,OU=PV-Groups,OU=PV-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=PV-Lab-Users,OU=PV-Groups,OU=PV-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 332065
+department: Information Technology
+company: PentestLab Corp
+name: Sam Rivera
+objectGUID:: skBaArbr1UKMblPVauwCSA==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+homeDirectory: FLAG{us3r_4ttr1but3_3num3r4t10n}
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134220143621450411
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGpQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: pv_intern
+sAMAccountType: 805306368
+userPrincipalName: pv_intern@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260430091922.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Laura Chen, PV-Users, PV-Project, PENTESTLAB.local
+dn: CN=Laura Chen,OU=PV-Users,OU=PV-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Laura Chen
+sn: Chen
+title: Helpdesk Technician
+description: INACTIVE -- helpdesk tech -- no logon in 400+ days
+physicalDeliveryOfficeName: PVFLAG1{1N4CT1V3_US3R_FULL_PR0P3RT13S_F1}
+givenName: Laura
+distinguishedName: CN=Laura Chen,OU=PV-Users,OU=PV-Project,DC=PENTESTLAB,DC=lo
+ cal
+instanceType: 4
+whenCreated: 20260430091922.0Z
+whenChanged: 20260430091923.0Z
+uSNCreated: 320574
+memberOf: CN=PV-HelpDesk,OU=PV-Groups,OU=PV-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=PV-Lab-Users,OU=PV-Groups,OU=PV-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 320642
+department: IT Support
+company: PentestLab Corp
+name: Laura Chen
+objectGUID:: iJQgRIlU6E2c7StqQ93GlQ==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134220143622076426
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGpgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: pv_helpdesk
+sAMAccountType: 805306368
+userPrincipalName: pv_helpdesk@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260430091922.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# David Marsh, PV-Users, PV-Project, PENTESTLAB.local
+dn: CN=David Marsh,OU=PV-Users,OU=PV-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: David Marsh
+sn: Marsh
+title: IT Manager
+description: IT Manager -- infrastructure oversight
+physicalDeliveryOfficeName: PV-Floor2
+givenName: David
+distinguishedName: CN=David Marsh,OU=PV-Users,OU=PV-Project,DC=PENTESTLAB,DC=l
+ ocal
+instanceType: 4
+whenCreated: 20260430091922.0Z
+whenChanged: 20260430091923.0Z
+uSNCreated: 320580
+memberOf: CN=PV-IT-Admins,OU=PV-Groups,OU=PV-Project,DC=PENTESTLAB,DC=local
+memberOf: CN=PV-Lab-Users,OU=PV-Groups,OU=PV-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 320644
+department: Information Technology
+company: PentestLab Corp
+streetAddress: PVFLAG3{ACL_GEN3R1C_ALL_PW_R3S3T_F3}
+name: David Marsh
+objectGUID:: alT/u2r9Ck+6pKTlOPn2EA==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134220143622544355
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGpwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: pv_manager
+sAMAccountType: 805306368
+userPrincipalName: pv_manager@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260430091922.0Z
+dSCorePropagationData: 20260430091922.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Rachel Kim, PV-Users, PV-Project, PENTESTLAB.local
+dn: CN=Rachel Kim,OU=PV-Users,OU=PV-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Rachel Kim
+sn: Kim
+title: IT Auditor
+description: DISABLED -- former IT auditor -- retained for compliance
+postalCode: PVFLAG2{D1S4BL3D_4CC0UNT_P0W3RV13W_F2}
+physicalDeliveryOfficeName: PV-Floor3
+givenName: Rachel
+distinguishedName: CN=Rachel Kim,OU=PV-Users,OU=PV-Project,DC=PENTESTLAB,DC=lo
+ cal
+instanceType: 4
+whenCreated: 20260430091922.0Z
+whenChanged: 20260430091923.0Z
+uSNCreated: 320586
+memberOf: CN=PV-Lab-Users,OU=PV-Groups,OU=PV-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 320643
+department: Compliance
+company: PentestLab Corp
+name: Rachel Kim
+objectGUID:: rDvdjejPH06TJ7/7GphJVg==
+userAccountControl: 66050
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134220143623018196
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGqAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: pv_auditor
+sAMAccountType: 805306368
+userPrincipalName: pv_auditor@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 16010101000000.0Z
+
+# Tom Bradley, PV-Users, PV-Project, PENTESTLAB.local
+dn: CN=Tom Bradley,OU=PV-Users,OU=PV-Project,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Tom Bradley
+sn: Bradley
+title: Desktop Engineer
+description: Desktop deployment engineer -- GPO management
+physicalDeliveryOfficeName: PV-Floor1
+givenName: Tom
+distinguishedName: CN=Tom Bradley,OU=PV-Users,OU=PV-Project,DC=PENTESTLAB,DC=l
+ ocal
+instanceType: 4
+whenCreated: 20260430091922.0Z
+whenChanged: 20260430091922.0Z
+uSNCreated: 320591
+memberOf: CN=PV-Lab-Users,OU=PV-Groups,OU=PV-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 320595
+department: IT Support
+company: PentestLab Corp
+name: Tom Bradley
+objectGUID:: wflRvsQeekO+j36pUR682w==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134220143623484823
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGqQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: pv_gpo
+sAMAccountType: 805306368
+userPrincipalName: pv_gpo@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260430091922.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Print Service, PV-ServiceAccounts, PV-Project, PENTESTLAB.local
+dn: CN=Print Service,OU=PV-ServiceAccounts,OU=PV-Project,DC=PENTESTLAB,DC=loca
+ l
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Print Service
+sn: Service
+title: Service Account
+description: Windows Print Spooler service account -- do not modify
+givenName: Print
+distinguishedName: CN=Print Service,OU=PV-ServiceAccounts,OU=PV-Project,DC=PEN
+ TESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260430091922.0Z
+whenChanged: 20260430091923.0Z
+uSNCreated: 320597
+memberOf: CN=PV-Lab-Users,OU=PV-Groups,OU=PV-Project,DC=PENTESTLAB,DC=local
+uSNChanged: 320645
+department: Information Technology
+company: PentestLab Corp
+name: Print Service
+objectGUID:: g1jVnAxlY0+FrUOcuxtMPA==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134220143624265128
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGqgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc_print
+sAMAccountType: 805306368
+userPrincipalName: svc_print@pentestlab.local
+servicePrincipalName: SPOOLER/print:9100
+servicePrincipalName: SPOOLER/print.pentestlab.local:9100
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260430091922.0Z
+dSCorePropagationData: 16010101000000.0Z
+mobile: PVFLAG4{K3RB3R04ST_W1ND0WS_N4T1V3_F4}
+
+# svc_web, Users, PENTESTLAB.local
+dn: CN=svc_web,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: svc_web
+description: Web service account
+distinguishedName: CN=svc_web,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260506084034.0Z
+whenChanged: 20260506135538.0Z
+uSNCreated: 332035
+uSNChanged: 332222
+name: svc_web
+objectGUID:: hdNHDsF1J0eMIUy0cZIjQQ==
+userAccountControl: 512
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134225304343518069
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGqwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: svc_web
+sAMAccountType: 805306368
+userPrincipalName: svc_web@pentestlab.local
+servicePrincipalName: HTTP/webserver.pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 16010101000000.0Z
+msDS-AllowedToDelegateTo: FLAG5{f6c8d9e0a1b23456abcdefabcdefabcdef112233445566
+ 778899aabbccddeeff_powerview}
+
+# hr_manager, Users, PENTESTLAB.local
+dn: CN=hr_manager,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: hr_manager
+description: HR Manager
+distinguishedName: CN=hr_manager,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260506084034.0Z
+whenChanged: 20260506133459.0Z
+displayName: FLAG3{c3f9a81e7b2d4c6f8e1a0b9d3f5c7e2a11223344556677889900aabbccd
+ deeff_powerview}
+uSNCreated: 332041
+uSNChanged: 332194
+name: hr_manager
+objectGUID:: /XI0rfGtZ0CuD0brfIG0Yg==
+userAccountControl: 512
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134225304344997626
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGrAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: hr_manager
+sAMAccountType: 805306368
+userPrincipalName: hr_manager@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260513195430.0Z
+dSCorePropagationData: 20260506135538.0Z
+dSCorePropagationData: 20260506135519.0Z
+dSCorePropagationData: 20260506135416.0Z
+dSCorePropagationData: 16010101000004.0Z
+
+# pv_ops, Users, PENTESTLAB.local
+dn: CN=pv_ops,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: pv_ops
+description: PowerView ops helper
+distinguishedName: CN=pv_ops,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260506084034.0Z
+whenChanged: 20260506095448.0Z
+uSNCreated: 332047
+memberOf: CN=PV-OpsTeam,CN=Users,DC=PENTESTLAB,DC=local
+memberOf: CN=PrivilegedOps,CN=Users,DC=PENTESTLAB,DC=local
+uSNChanged: 332132
+name: pv_ops
+objectGUID:: ZQZZAqbxUUuZfEQKeXw0Mg==
+userAccountControl: 512
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 134231520645429320
+pwdLastSet: 134225304345750671
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGrQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 3
+sAMAccountName: pv_ops
+sAMAccountType: 805306368
+userPrincipalName: pv_ops@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134225348889341129
+
+# svc_deploy, Users, PENTESTLAB.local
+dn: CN=svc_deploy,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: svc_deploy
+description: Deployment service account
+distinguishedName: CN=svc_deploy,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260506084034.0Z
+whenChanged: 20260506095615.0Z
+uSNCreated: 332053
+uSNChanged: 332135
+name: svc_deploy
+objectGUID:: 1dLuf/GQnEugChez+rcdYw==
+userAccountControl: 512
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 134225515957837521
+pwdLastSet: 134225304346465499
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGrgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 2
+sAMAccountName: svc_deploy
+sAMAccountType: 805306368
+userPrincipalName: svc_deploy@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134225349756775636
+
+# pv_scout, Users, PENTESTLAB.local
+dn: CN=pv_scout,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: pv_scout
+description: PowerView scout account
+distinguishedName: CN=pv_scout,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260506084611.0Z
+whenChanged: 20260506133458.0Z
+uSNCreated: 332071
+uSNChanged: 332192
+name: pv_scout
+objectGUID:: 9db5j56H6U+E2DvuUn3ofg==
+userAccountControl: 512
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+homeDirectory: FLAG1{a91c4f2d7e8b93c1f0d2a6e4b5c7d8e9f1029384756abcdef12345678
+ 9abcd_powerview}
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 134225307718852433
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGsAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: pv_scout
+sAMAccountType: 805306368
+userPrincipalName: pv_scout@pentestlab.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 16010101000000.0Z
+
+# labuser, Users, PENTESTLAB.local
+dn: CN=labuser,CN=Users,DC=PENTESTLAB,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: labuser
+distinguishedName: CN=labuser,CN=Users,DC=PENTESTLAB,DC=local
+instanceType: 4
+whenCreated: 20260513144510.0Z
+whenChanged: 20260527141638.0Z
+uSNCreated: 336019
+memberOf: CN=Domain Admins,CN=Users,DC=PENTESTLAB,DC=local
+memberOf: CN=Administrators,CN=Builtin,DC=PENTESTLAB,DC=local
+uSNChanged: 348259
+name: labuser
+objectGUID:: 1QkhZ8riYk+MJkFwxRL4DA==
+userAccountControl: 512
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 134243649983244019
+pwdLastSet: 134231571109175823
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAL37AEBX3FkP6RvrGsgQAAA==
+adminCount: 1
+accountExpires: 0
+logonCount: 1
+sAMAccountName: labuser
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=PENTESTLAB,DC=local
+dSCorePropagationData: 20260513150941.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 134243649983244019
+
+# search reference
+ref: ldap://ForestDnsZones.PENTESTLAB.local/DC=ForestDnsZones,DC=PENTESTLAB,DC
+ =local
+
+# search reference
+ref: ldap://DomainDnsZones.PENTESTLAB.local/DC=DomainDnsZones,DC=PENTESTLAB,DC
+ =local
+
+# search reference
+ref: ldap://PENTESTLAB.local/CN=Configuration,DC=PENTESTLAB,DC=local
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 67
+# numEntries: 63
+# numReferences: 3
