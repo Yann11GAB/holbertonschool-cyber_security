@@ -1,0 +1,67 @@
+LDAP                     192.168.56.20   389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:PENTESTLAB.local)
+LDAP                     192.168.56.20   389    DC01             [+] PENTESTLAB.local\bh_intern:User@2025! 
+LDAP                     192.168.56.20   389    DC01             [*] Enumerated 63 domain users: PENTESTLAB.local
+LDAP                     192.168.56.20   389    DC01             -Username-                    -Last PW Set-       -BadPW-  -Description-                                               
+LDAP                     192.168.56.20   389    DC01             Administrator                 2026-01-29 14:06:29 0        Built-in account for administering the computer/domain      
+LDAP                     192.168.56.20   389    DC01             Guest                         <never>             2        Built-in account for guest access to the computer/domain    
+LDAP                     192.168.56.20   389    DC01             krbtgt                        2026-01-29 14:38:13 2        Key Distribution Center Service Account                     
+LDAP                     192.168.56.20   389    DC01             jadmin                        2026-02-09 10:36:52 2        IT Administrator - Domain Admin                             
+LDAP                     192.168.56.20   389    DC01             ssupport                      2026-02-09 10:36:52 2        IT Support Technicien                                       
+LDAP                     192.168.56.20   389    DC01             mmanager                      2026-02-09 10:36:52 2        IT Manager                                                  
+LDAP                     192.168.56.20   389    DC01             svc_sql                       2026-04-21 04:45:01 2        SQL Server Service Account                                  
+LDAP                     192.168.56.20   389    DC01             legacy                        2026-04-20 06:42:02 0        Legacy account - no kerberos preauth                        
+LDAP                     192.168.56.20   389    DC01             aharris                       2026-02-09 10:36:52 2        HR Specialist                                               
+LDAP                     192.168.56.20   389    DC01             brecruiter                    2026-02-09 10:36:52 2        Senior Recruiter                                            
+LDAP                     192.168.56.20   389    DC01             cfinance                      2026-02-09 10:36:52 2        Financial Analyst                                           
+LDAP                     192.168.56.20   389    DC01             daccountant                   2026-02-09 10:36:52 2        Senior Accountant                                           
+LDAP                     192.168.56.20   389    DC01             ecfo                          2026-02-09 10:36:52 2        Chied Financial Officer                                     
+LDAP                     192.168.56.20   389    DC01             fsales                        2026-02-09 10:36:52 2        Sales Representative                                        
+LDAP                     192.168.56.20   389    DC01             gmanager                      <never>             2        Sales Manager                                               
+LDAP                     192.168.56.20   389    DC01             hrep                          2026-02-09 10:36:52 2        Junior Sales Representive                                   
+LDAP                     192.168.56.20   389    DC01             gsales                        2026-02-09 10:36:52 2                                                                    
+LDAP                     192.168.56.20   389    DC01             svc_backup                    2026-04-22 04:43:46 3        Backup Service Account - Has DCSync rights                  
+LDAP                     192.168.56.20   389    DC01             tempadmin                     2026-02-09 10:36:52 0        Temporary Admin Account                                     
+LDAP                     192.168.56.20   389    DC01             svc_app                       2026-02-09 10:36:52 0        Application Service - Password: AppServ1ce!                 
+LDAP                     192.168.56.20   389    DC01             svc_iis                       2026-02-09 10:36:52 2        IIS Web Service Account                                     
+LDAP                     192.168.56.20   389    DC01             oldadmin                      2026-02-04 10:30:51 2        Old administrator account - Password never changed          
+LDAP                     192.168.56.20   389    DC01             alice.martin                  2026-04-14 05:43:48 2        Regular User - Lab Student                                  
+LDAP                     192.168.56.20   389    DC01             bob.dupont                    2026-04-14 05:43:48 2        Regular User - Lab Student                                  
+LDAP                     192.168.56.20   389    DC01             carol.white                   2026-04-14 05:43:48 2        FLAG4{ab312724162e30809801f7c0490f547317ba8cf3fbc243819264ddf0e52b}
+LDAP                     192.168.56.20   389    DC01             david.brown                   2026-04-14 05:43:48 2        IT Staff                                                    
+LDAP                     192.168.56.20   389    DC01             svc.backup                    2026-04-14 05:43:48 2        FLAG1{747fb213581c9cd487fc6e77bf4e54aa6321839fe023b0551ceef706cbc6}
+LDAP                     192.168.56.20   389    DC01             svc.web                       2026-04-14 05:43:48 2                                                                    
+LDAP                     192.168.56.20   389    DC01             old.admin                     2026-04-14 05:43:48 2                                                                    
+LDAP                     192.168.56.20   389    DC01             temp.user                     2026-04-14 05:43:48 2        DISABLED - Temporary account                                
+LDAP                     192.168.56.20   389    DC01             student                       2026-04-16 09:48:10 2                                                                    
+LDAP                     192.168.56.20   389    DC01             mwebb                         2026-04-23 07:52:05 2                                                                    
+LDAP                     192.168.56.20   389    DC01             dreeves                       2026-04-23 07:52:05 2        Temp password: Reeves@Temp2024                              
+LDAP                     192.168.56.20   389    DC01             rfoster                       2026-04-23 07:52:05 2                                                                    
+LDAP                     192.168.56.20   389    DC01             svc_mssql                     2026-04-23 07:52:05 2                                                                    
+LDAP                     192.168.56.20   389    DC01             ncross                        2026-04-23 07:53:12 2        Network infrastructure — internal ops team                  
+LDAP                     192.168.56.20   389    DC01             ostone                        2026-04-23 07:53:12 2        PKI certificate management — security operations            
+LDAP                     192.168.56.20   389    DC01             vhayes                        2026-04-23 07:53:12 2        DISABLED — former employee, kept for audit trail            
+LDAP                     192.168.56.20   389    DC01             svc_pki                       2026-04-23 07:53:12 1        Active Directory Certificate Services account               
+LDAP                     192.168.56.20   389    DC01             svc_relay                     2026-04-23 07:53:12 1        Internal authentication relay — network services            
+LDAP                     192.168.56.20   389    DC01             iauditor                      2026-04-24 11:35:31 2                                                                    
+LDAP                     192.168.56.20   389    DC01             svc_reporting                 2026-04-24 11:35:31 2                                                                    
+LDAP                     192.168.56.20   389    DC01             luser                         2026-04-24 11:35:31 2                                                                    
+LDAP                     192.168.56.20   389    DC01             bh_intern                     2026-04-27 05:31:58 0        New IT trainee — BloodHound collection entry point          
+LDAP                     192.168.56.20   389    DC01             bh_helpdesk                   2026-04-27 05:31:58 0        Level 2 helpdesk — user management delegation               
+LDAP                     192.168.56.20   389    DC01             bh_devops                     2026-04-27 05:31:58 0        CI/CD pipeline management — server tier access              
+LDAP                     192.168.56.20   389    DC01             jmartin                       2026-04-29 06:26:08 0        Application release coordination — CI/CD owner              
+LDAP                     192.168.56.20   389    DC01             bh_sysadmin                   2026-04-29 08:18:45 2        Senior sysadmin — AD infrastructure management              
+LDAP                     192.168.56.20   389    DC01             bh_auditor                    2026-04-27 05:31:59 1        DISABLED — audit account — retained for compliance records  
+LDAP                     192.168.56.20   389    DC01             svc_monitor                   2026-04-27 05:31:59 4        Nagios / Zabbix monitoring agent service account            
+LDAP                     192.168.56.20   389    DC01             svc_sql2                      2026-04-29 06:05:11 2        SQL Server 2022 secondary instance — do not modify          
+LDAP                     192.168.56.20   389    DC01             pv_intern                     2026-04-30 05:19:22 0        IT intern -- domain joined workstation user                 
+LDAP                     192.168.56.20   389    DC01             pv_helpdesk                   2026-04-30 05:19:22 0        INACTIVE -- helpdesk tech -- no logon in 400+ days          
+LDAP                     192.168.56.20   389    DC01             pv_manager                    2026-04-30 05:19:22 0        IT Manager -- infrastructure oversight                      
+LDAP                     192.168.56.20   389    DC01             pv_auditor                    2026-04-30 05:19:22 0        DISABLED -- former IT auditor -- retained for compliance    
+LDAP                     192.168.56.20   389    DC01             pv_gpo                        2026-04-30 05:19:22 0        Desktop deployment engineer -- GPO management               
+LDAP                     192.168.56.20   389    DC01             svc_print                     2026-04-30 05:19:22 0        Windows Print Spooler service account -- do not modify      
+LDAP                     192.168.56.20   389    DC01             svc_web                       2026-05-06 04:40:34 0        Web service account                                         
+LDAP                     192.168.56.20   389    DC01             hr_manager                    2026-05-06 04:40:34 0        HR Manager                                                  
+LDAP                     192.168.56.20   389    DC01             pv_ops                        2026-05-06 04:40:34 0        PowerView ops helper                                        
+LDAP                     192.168.56.20   389    DC01             svc_deploy                    2026-05-06 04:40:34 0        Deployment service account                                  
+LDAP                     192.168.56.20   389    DC01             pv_scout                      2026-05-06 04:46:11 0        PowerView scout account                                     
+LDAP                     192.168.56.20   389    DC01             labuser                       2026-05-13 10:45:10 0                                                                    
